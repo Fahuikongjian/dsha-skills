@@ -67,7 +67,7 @@ whenToUse: 用户要求自动化某个 App 的日常/重复操作（签到、打
       target: "关于手机"
       verify: "dump 出现 Android 版本 / 版本号 等字样"
   success: "dump 含设备名称与 Android 版本信息"
-  notes: 部分 ROM 该项在「系统」二级菜单下；找不到时先 tap「系统」再找。UI 类配方依赖读屏能力：dump 报 [ERR] SCREEN_TARGET_UNAVAILABLE 时，是设备无障碍/读屏授权未开——提示用户在 DSHA App 的设备能力授权里开启屏幕读取，不要反复重试。
+  notes: 部分 ROM 该项在「系统」二级菜单下；找不到时先 tap「系统」再找。UI 类配方依赖读屏能力：dump 报 [ERR] SCREEN_TARGET_UNAVAILABLE 时，是设备无障碍/读屏授权未开——提示用户在 DSHA App 的设备能力授权里开启屏幕读取，不要反复重试。读屏可能逐次弹确认框：用户点拒绝（返回「你拒绝了这次屏幕读取」）时立即停下询问意图，绝不连续重试。
   verified: "2026-10-21"
 ```
 
